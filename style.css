@@ -1,0 +1,95 @@
+*{
+   font-family: Arial, Helvetica, sans-serif;
+   padding: 0; 
+}
+
+body{
+    background:#333 ;
+    animation: bac 9s ;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes bac{
+   0%{ background:#333 ;} 
+   100%{
+       background: rgb(26, 25, 26);
+
+}
+}
+
+.skills{
+    width: 500px;
+    margin:60px auto;
+    color:#fff ;
+}
+
+.skills h1{
+    text-align: center;
+    text-transform: capitalize;
+    box-shadow: 3px 3px 8px rgba(190, 240, 52, 0.2), -3px -3px 8px #2187e7;
+}
+  .bar{
+      background: #353b48;
+      display: block;
+      height: 8px;
+      border: 1px solid rgba(0,0, 0, .5);
+      border-radius: 3px;
+      overflow: hidden;
+      box-shadow: 0 0 10px #2187e7ba;
+  }
+.bar span{
+    height: 8px;
+    float: left;
+    background: #2187e7;
+}
+.java{
+width: 80%;
+animation: java  2.5s;
+animation-delay: 0;
+animation-fill-mode: forwards;
+}
+
+.csharp{
+    width: 70%;
+    animation: csharp  3s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+.htmlcss{
+    width: 60%;
+    animation: htmlcss  3.5s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+.javascript{
+    width: 20%;
+    animation: javascript 4s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes java{
+    0%{width: 0;}
+    100%{width: 80%;
+        background: rgb(151, 4, 4);
+    }
+}
+@keyframes csharp{
+    0%{width: 0;}
+    100%{width: 70%;
+        background: rgb(190, 35, 35);
+    }
+}
+@keyframes htmlcss{
+    0%{width: 0;}
+    100%{width: 60%;
+        background: rgb(30, 50, 230);
+    }
+}
+@keyframes javascript{
+    0%{width: 0;}
+    100%{width: 20%;
+        background: rgb(44, 209, 52);
+    }
+}
